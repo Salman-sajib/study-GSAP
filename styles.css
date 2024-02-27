@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background-color: red;
+  height: 5rem;
+}
+
+header .links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: whitesmoke;
+  font-size: 1.15rem;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .button {
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  background-color: green;
+  width: 15vw;
+}
+
+footer {
+  background-color: blue;
+  height: 5rem;
+  transform: translateY(100%);
+}
